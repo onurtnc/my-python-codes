@@ -1,0 +1,40 @@
+def hesapla(a, op, b):
+    if op == "+":
+        return a + b
+    if op == "-":
+        return a - b
+    if op == "*":
+        return a * b
+    if op == "/":
+        if b == 0:
+            return "Hata: 0'a bölünmez!"
+        return a / b
+    if op == "**":
+        return a ** b
+    if op == "%":
+        if b == 0:
+            return "Hata: 0'a göre mod alınamaz!"
+        return a % b
+    return "Hata: Geçersiz işlem!"
+
+print("╔══════════════════════╗")
+print("║   PYTHON HESAP MAK.   ║")
+print("╚══════════════════════╝")
+print("İşlemler: +  -  *  /  **  %")
+print("Çıkmak için: q")
+
+while True:
+    op = input("\nİşlem seç (+,-,*,/,**,%) veya q: ").strip()
+    if op.lower() == "q":
+        print("Çıkış yapılıyor...")
+        break
+
+    try:
+        a = float(input("1. sayı: "))
+        b = float(input("2. sayı: "))
+    except ValueError:
+        print("Hata: Lütfen sayı gir!")
+        continue
+
+    sonuc = hesapla(a, op, b)
+    print("Sonuç:", sonuc)
