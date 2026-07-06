@@ -32,3 +32,15 @@ Do NOT scan systems without explicit permission.
 - `argparse` (CLI interface)
 - `dataclasses`
 - `datetime`, `json`, `csv`
+
+## ▶️ Run the Program
+```bash
+# Quick scan of common ports
+python port_scanner.py scanme.nmap.org --mode quick
+
+# Scan a custom port range with banner grabbing
+python port_scanner.py 192.168.1.1 --mode custom --ports 22,80,443,8000-8100 --banner
+
+# Export results to JSON/CSV
+python port_scanner.py scanme.nmap.org --mode top1024 --out-json results.json --out-csv results.csv
+```

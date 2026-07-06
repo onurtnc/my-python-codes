@@ -20,3 +20,8 @@ It simulates the classic casino Blackjack experience with betting mechanics, dea
 - Tkinter (GUI)
 - `random` module (deck shuffling)
 - Object-Oriented Programming (OOP)
+
+## ▶️ Run the Program
+```bash
+python blackjack.py
+```

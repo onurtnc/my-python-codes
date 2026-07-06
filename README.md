@@ -1,32 +1,28 @@
-## Python Security & Automation Scripts
+## Python Projects
 
-This repository includes Python scripts developed to support
-security analysis, detection engineering, and SOC-style automation tasks.
+This repository is a collection of small Python projects I use to practice
+programming fundamentals, GUI development with Tkinter, and basic
+network/security scripting.
 
-### Included Scripts
-- **DNS Beaconing Detector**
-  - Parses DNS logs to identify repetitive query patterns
-  - Helps detect potential command-and-control (C2) beaconing behavior
-  - Demonstrates log analysis and threshold-based detection logic
-
-- **EDR-Style Process Detection**
-  - Analyzes endpoint process telemetry (Sysmon-like events)
-  - Detects suspicious parent-child process chains
-    (e.g., Office applications spawning PowerShell)
-  - Identifies encoded PowerShell command execution
-  - Simulates real-world EDR detection logic
+### Included Projects
+- **Calculator (CLI)** — a command-line calculator supporting basic
+  arithmetic, power, and modulo operations.
+- **Port Scanner** — a defensive, multi-threaded TCP port scanner with
+  banner grabbing, JSON/CSV export, and IPv4/IPv6 support.
+- **Blackjack (21) Game** — a graphical Blackjack game built with Tkinter,
+  including betting mechanics and dealer logic.
+- **Racing Game** — a 2D car racing game built with Tkinter, with
+  increasing difficulty and a high-score tracker.
 
 ### Skills Demonstrated
-- Log parsing and data extraction
-- Security-focused automation using Python
-- Detection logic design and implementation
-- MITRE ATT&CK-aligned behavioral analysis
-- SOC mindset: detection → investigation → response
+- Core Python programming (control flow, functions, OOP)
+- GUI development with Tkinter
+- Multi-threaded network programming (`socket`, `ThreadPoolExecutor`)
+- CLI design with `argparse`
+- Input validation and error handling
 
 ### Purpose
-These scripts were created to demonstrate how Python can be used
-to automate repetitive security tasks, support incident detection,
-and provide actionable insights for SOC analysts.
-
-> Note: The focus of these scripts is defensive security and detection engineering,
-not offensive exploitation.
+These projects were built to strengthen my general programming skills
+and to explore how Python can be used for both everyday tools (calculator)
+and security-adjacent tasks (port scanning), alongside my main focus on
+cybersecurity and SOC-related work.
